@@ -19,7 +19,7 @@ def test_validate_phone():
 
 def test_validate_snils():
     assert validate_snils("11223344595") == True
-    assert validate_snils("001-001-999 32") == True
+    assert validate_snils("001-001-999 65") == True
     assert validate_snils("123") == False
     assert validate_snils("123456789012") == False
     assert validate_snils("abcdefghijk") == False
